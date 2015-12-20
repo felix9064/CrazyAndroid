@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         /**
          * 用编程的方式开发UI界面
          */
+        //创建一个线性布局管理器
         LinearLayout mylayout = new LinearLayout(this);
         super.setContentView(mylayout);
         mylayout.setOrientation(LinearLayout.VERTICAL);
