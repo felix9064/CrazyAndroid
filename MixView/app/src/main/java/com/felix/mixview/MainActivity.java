@@ -3,6 +3,7 @@ package com.felix.mixview;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -28,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
         //代码创建ImageView组件
         final ImageView img = new ImageView(this);
+
+        //设置ImageView组件的宽和高
+        img.setLayoutParams(new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT
+        ));
 
         //将ImageView组件添加到LinearLayout线性布局容器中
         myLayout.addView(img);
